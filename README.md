@@ -31,15 +31,17 @@ Market_Watch_Agents/
 └── README.md               # Project documentation
 ```
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
+
 Follow these steps to set up the project locally:
 
-1. Clone the Repository
+## 1. Clone the Repository
 
        git clone [https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git](https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git)
        cd Market_Watch_Agents
 
-2. Create a Virtual Environment
+## 2. Create a Virtual Environment
+   
 It is recommended to use a virtual environment to manage dependencies.
 
        # Windows
@@ -50,44 +52,49 @@ It is recommended to use a virtual environment to manage dependencies.
        python3 -m venv venv
        source venv/bin/activate
 
-3. Install Dependencies
+## 3. Install Dependencies
+   
   Install the required packages listed in requirements.txt.
 
        pip install -r requirements.txt
 
-4. Google Cloud Authentication
-Since this project uses Vertex AI, you must authenticate with Google Cloud:
+## 4. Google Cloud Authentication
+   
+  Since this project uses Vertex AI, you must authenticate with Google Cloud:
 
-  1. Install the gcloud CLI if you haven't already.
+  ## (1). Install the gcloud CLI if you haven't already.
 
-  2. Login to your account:
+  ## (2). Login to your account:
 
     gcloud auth application-default login
 
-  3. Set your Project ID (optional but recommended):
+  ## (3). Set your Project ID (optional but recommended):
 
     gcloud config set project YOUR_PROJECT_ID
 
-5. Configure Environment
+## 5. Configure Environment
 
-  1. Create a .env file in the root directory.
+  ## (1). Create a .env file in the root directory.
 
-  2.  Add your Google Cloud specific variables:
+  ## (2). Add your Google Cloud specific variables:
 
-    GOOGLE_CLOUD_PROJECT=your-project-id-here
-    GOOGLE_CLOUD_REGION=us-central1
+       GOOGLE_CLOUD_PROJECT=your-project-id-here
+       GOOGLE_CLOUD_REGION=us-central1
 
-🏃 Usage
+## 🏃 Usage
+
 To start the agents, run the main.py script:
 
     python main.py
 
 The system will initialize, connect to Vertex AI, load the previous context from market_memory_bank.json, and begin executing its market watch tasks.
 
-🧠 Memory Bank
+## 🧠 Memory Bank
+
 The file market_memory_bank.json is critical for the agents' continuity. It stores the "memory" of previous market states or decisions. Avoid manually editing this file unless you are debugging, as it may corrupt the agent's state.
 
-🤝 Contributing
+## 🤝 Contributing
+
 Contributions are welcome!
 
  1. Fork the Project
@@ -100,5 +107,6 @@ Contributions are welcome!
 
  5. Open a Pull Request
     
-📄 License
+## 📄 License
+
  Distributed under the MIT License.							
