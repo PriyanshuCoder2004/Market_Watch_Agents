@@ -1,5 +1,4 @@
-                                                                                  Tiltle: Market Watch Agents 📈
-                                                                                  
+                                                                                                                                                    
 # Market Watch Agents 📈🤖
 
 **Market Watch Agents** is a Python-based autonomous system designed to monitor, analyze, and track financial market data. By leveraging Google's Vertex AI and a persistent memory system, the project aims to provide automated insights and trend tracking for traders and analysts.
@@ -30,30 +29,31 @@ Market_Watch_Agents/
 ├── requirements.txt        # List of Python dependencies
 ├── .env                    # Environment variables (Project ID, Region - DO NOT COMMIT)
 └── README.md               # Project documentation
+```
 
 ⚙️ Installation & Setup
 Follow these steps to set up the project locally:
 
 1. Clone the Repository
 
-git clone [https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git](https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git)
-cd Market_Watch_Agents
+       git clone [https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git](https://github.com/PriyanshuCoder2004/Market_Watch_Agents.git)
+       cd Market_Watch_Agents
 
 2. Create a Virtual Environment
 It is recommended to use a virtual environment to manage dependencies.
 
-# Windows
-python -m venv venv
-venv\Scripts\activate
+       # Windows
+       python -m venv venv
+       venv\Scripts\activate
 
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
+       # macOS/Linux
+       python3 -m venv venv
+       source venv/bin/activate
 
 3. Install Dependencies
-Install the required packages listed in requirements.txt.
+  Install the required packages listed in requirements.txt.
 
-pip install -r requirements.txt
+       pip install -r requirements.txt
 
 4. Google Cloud Authentication
 Since this project uses Vertex AI, you must authenticate with Google Cloud:
@@ -61,22 +61,26 @@ Since this project uses Vertex AI, you must authenticate with Google Cloud:
   1. Install the gcloud CLI if you haven't already.
 
   2. Login to your account:
-      gcloud auth application-default login
+
+    gcloud auth application-default login
 
   3. Set your Project ID (optional but recommended):
-      gcloud config set project YOUR_PROJECT_ID
 
+    gcloud config set project YOUR_PROJECT_ID
 
 5. Configure Environment
-Create a .env file in the root directory.
 
-Add your Google Cloud specific variables:
-GOOGLE_CLOUD_PROJECT=your-project-id-here
-GOOGLE_CLOUD_REGION=us-central1
+  1. Create a .env file in the root directory.
+
+  2.  Add your Google Cloud specific variables:
+
+    GOOGLE_CLOUD_PROJECT=your-project-id-here
+    GOOGLE_CLOUD_REGION=us-central1
 
 🏃 Usage
 To start the agents, run the main.py script:
-python main.py
+
+    python main.py
 
 The system will initialize, connect to Vertex AI, load the previous context from market_memory_bank.json, and begin executing its market watch tasks.
 
@@ -95,6 +99,6 @@ Contributions are welcome!
  4. Push to the Branch (git push origin feature/AmazingFeature)
 
  5. Open a Pull Request
-
+    
 📄 License
- Distributed under the MIT License.
+ Distributed under the MIT License.							
